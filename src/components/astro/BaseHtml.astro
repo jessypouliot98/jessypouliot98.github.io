@@ -1,0 +1,14 @@
+---
+import { DefaultLayout } from "../layouts/DefaultLayout/DefaultLayout";
+import BaseHead from "./BaseHead.astro";
+
+const { title } = Astro.props;
+---
+<html lang="en">
+	<BaseHead title={title} />
+	<body>
+		<DefaultLayout>
+			<slot />
+		</DefaultLayout>
+	</body>
+</html>
